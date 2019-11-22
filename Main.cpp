@@ -6,14 +6,14 @@
 
 #include "Disk.h"
 #include "Peg.h"
+#include "Debug.h"
 
 using namespace std;
 
 int main (){
 
-    std::cout << "Hello World!" << std::endl;
-
     Peg peg1 = Peg(3);
+    Debug::Log(peg1.ToString());
 
     return 0;
 }

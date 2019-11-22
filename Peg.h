@@ -5,15 +5,19 @@
 #ifndef AI_PROJ2_PEG_H
 #define AI_PROJ2_PEG_H
 
-#include "stack"
+#include "vector"
 #include "Disk.h"
 #include "Debug.h"
 
 class Peg : public Serializeable {
 
 public:
-    std::stack<Disk> disks;
+    std::vector<Disk> disks;
     Peg (int ringCount);
+    string ToString();
+
+private:
+    string pegChar = "|";
 
 };
 

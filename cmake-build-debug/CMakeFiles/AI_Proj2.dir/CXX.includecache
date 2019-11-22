@@ -6,41 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/clays/CLionProjects/AI_Proj2/Debug.cpp
-Debug.h
-C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 string
 -
 iostream
 C:/Users/clays/CLionProjects/AI_Proj2/iostream
 
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.cpp
-Disk.h
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
-
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 string
 -
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp
-iostream
-C:/Users/clays/CLionProjects/AI_Proj2/iostream
-Disk.h
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
-Peg.h
-C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.cpp
 Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
-stack
-C:/Users/clays/CLionProjects/AI_Proj2/stack
+vector
+C:/Users/clays/CLionProjects/AI_Proj2/vector
 Disk.h
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 Debug.h

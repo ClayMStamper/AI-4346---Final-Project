@@ -18,7 +18,7 @@ string Disk::ToString() {
 
     string line;
 
-
+    line += diskChar;
 
     return line;
 }

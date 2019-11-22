@@ -17,6 +17,10 @@ public:
     Disk(int);
     bool CanStackOn(Disk);
     string ToString() override;
+
+private:
+    string diskChar = "=";
+
 };
 
 
