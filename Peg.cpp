@@ -10,17 +10,31 @@ Peg::Peg(int ringCount) {
         Disk newDisk = Disk(i);
         disks.push_back(newDisk);
     }
+    offset = disks.size();
 }
 
 string Peg::ToString() {
 
     string frame;
 
-    for (int i = 0; i < disks.size(); ++i) {
-        frame += pegChar + "\n"; //draw pole
-        frame += disks[i].ToString();
+    for (int i = disks.size() - 1; i >= 0; --i) {
+        string diskSpace = GetOffsetSpace(i);
+        string pegSpace = GetOffsetSpace(offset);
+        frame += diskSpace + disks[i].ToString();
+        if (i > 0)
+            frame +=  "\n" + GetOffsetSpace(offset - 1) + pegChar  + "\n"; //draw pole
     }
 
     return frame;
 
+}
+
+string Peg::GetOffsetSpace(int width) {
+    string space;
+
+    for (int i = 0; i < width; ++i) {
+        space += " ";
+    }
+
+    return space;
 }

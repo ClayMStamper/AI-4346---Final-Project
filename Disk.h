@@ -19,7 +19,7 @@ public:
     string ToString() override;
 
 private:
-    string diskChar = "=";
+    string diskChar = "==";
 
 };
 

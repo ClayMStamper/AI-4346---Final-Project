@@ -14,10 +14,12 @@ class Peg : public Serializeable {
 public:
     std::vector<Disk> disks;
     Peg (int ringCount);
-    string ToString();
+    string ToString() override;
+    string GetOffsetSpace(int width);
 
 private:
-    string pegChar = "|";
+    string pegChar = "||";
+    int offset;
 
 };
 

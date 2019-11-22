@@ -16,9 +16,11 @@ bool Disk::CanStackOn(Disk disk){
 
 string Disk::ToString() {
 
-    string line;
+    string frame;
 
-    line += diskChar;
+    for (int i = 0; i < width; ++i) {
+        frame += diskChar;
+    }
 
-    return line;
+    return frame;
 }

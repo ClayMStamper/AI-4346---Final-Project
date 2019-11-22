@@ -12,7 +12,7 @@ using namespace std;
 
 int main (){
 
-    Peg peg1 = Peg(3);
+    Peg peg1 = Peg(6);
     Debug::Log(peg1.ToString());
 
     return 0;
