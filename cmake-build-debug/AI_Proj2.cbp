@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AI_Proj2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/clays/CLionProjects/AI_Proj2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AI_Proj2">
+				<Option output="C:/Users/clays/CLionProjects/AI_Proj2/cmake-build-debug/AI_Proj2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/clays/CLionProjects/AI_Proj2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 AI_Proj2"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AI_Proj2/fast">
+				<Option output="C:/Users/clays/CLionProjects/AI_Proj2/cmake-build-debug/AI_Proj2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/clays/CLionProjects/AI_Proj2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 AI_Proj2/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/clays/CLionProjects/AI_Proj2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/clays/CLionProjects/AI_Proj2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Debug.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Debug.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Disk.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Disk.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Peg.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Peg.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
