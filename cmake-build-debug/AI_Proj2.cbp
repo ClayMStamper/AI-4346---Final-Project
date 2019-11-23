@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Disk.h">
 			<Option target="AI_Proj2"/>
 		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
 		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp">
 			<Option target="AI_Proj2"/>
 		</Unit>

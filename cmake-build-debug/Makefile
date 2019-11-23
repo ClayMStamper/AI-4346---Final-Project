@@ -178,6 +178,33 @@ Disk.cpp.s:
 	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Disk.cpp.s
 .PHONY : Disk.cpp.s
 
+Hanoi.obj: Hanoi.cpp.obj
+
+.PHONY : Hanoi.obj
+
+# target to build an object file
+Hanoi.cpp.obj:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj
+.PHONY : Hanoi.cpp.obj
+
+Hanoi.i: Hanoi.cpp.i
+
+.PHONY : Hanoi.i
+
+# target to preprocess a source file
+Hanoi.cpp.i:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Hanoi.cpp.i
+.PHONY : Hanoi.cpp.i
+
+Hanoi.s: Hanoi.cpp.s
+
+.PHONY : Hanoi.s
+
+# target to generate assembly for a file
+Hanoi.cpp.s:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Hanoi.cpp.s
+.PHONY : Hanoi.cpp.s
+
 Main.obj: Main.cpp.obj
 
 .PHONY : Main.obj
@@ -247,6 +274,9 @@ help:
 	@echo ... Disk.obj
 	@echo ... Disk.i
 	@echo ... Disk.s
+	@echo ... Hanoi.obj
+	@echo ... Hanoi.i
+	@echo ... Hanoi.s
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s

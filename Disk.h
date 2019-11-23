@@ -10,7 +10,7 @@
 #include <string>
 #include "Debug.h"
 
-class Disk : public Serializeable {
+class Disk : public IConvertToString {
 
 public:
     int width;

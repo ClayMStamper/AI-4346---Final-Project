@@ -6,7 +6,9 @@
 
 
 void Debug::Log(string msg) {
-
     cout << endl << msg << endl;
+}
 
+void Debug::Log(IConvertToString msg) {
+    cout << endl << msg.ToString() << endl;
 }

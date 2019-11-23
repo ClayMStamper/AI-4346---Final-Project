@@ -9,17 +9,17 @@
 #include "Disk.h"
 #include "Debug.h"
 
-class Peg : public Serializeable {
+class Peg : public IConvertToString {
 
 public:
     std::vector<Disk> disks;
-    Peg (int ringCount);
+    Peg(int ringCount, int height);
     string ToString() override;
     string GetOffsetSpace(int width);
 
 private:
     string pegChar = "||";
-    int offset;
+    int offset, height;
 
 };
 

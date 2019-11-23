@@ -12,8 +12,20 @@ using namespace std;
 
 int main (){
 
-    Peg peg1 = Peg(6);
-    Debug::Log(peg1.ToString());
+    int pegCount  = 3;
+    Peg peg1 = Peg(pegCount, pegCount);
+    Peg peg2 = Peg(0, pegCount);
+    Peg peg3 = Peg(0, pegCount);
+    vector<Peg> pegs = {peg1, peg2, peg3};
+
+
+    Debug::Log(pegs.back().ToString());
+
+    for (int i = 0; i < pegs.size() ; ++i) {
+        cout << "--------------\nPeg: " << i << endl;
+        Debug::Log(pegs[i].ToString());
+    }
+
 
     return 0;
 }

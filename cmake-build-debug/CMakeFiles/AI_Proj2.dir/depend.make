@@ -8,6 +8,9 @@ CMakeFiles\AI_Proj2.dir\Disk.cpp.obj: ..\Debug.h
 CMakeFiles\AI_Proj2.dir\Disk.cpp.obj: ..\Disk.cpp
 CMakeFiles\AI_Proj2.dir\Disk.cpp.obj: ..\Disk.h
 
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Hanoi.cpp
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Hanoi.h
+
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Debug.h
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Disk.h
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Main.cpp

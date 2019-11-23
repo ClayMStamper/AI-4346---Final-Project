@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "AI_Proj2.pdb"
   "CMakeFiles/AI_Proj2.dir/Debug.cpp.obj"
   "CMakeFiles/AI_Proj2.dir/Disk.cpp.obj"
+  "CMakeFiles/AI_Proj2.dir/Hanoi.cpp.obj"
   "CMakeFiles/AI_Proj2.dir/Main.cpp.obj"
   "CMakeFiles/AI_Proj2.dir/Peg.cpp.obj"
 )

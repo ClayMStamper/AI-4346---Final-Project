@@ -134,12 +134,32 @@ CMakeFiles\AI_Proj2.dir\Debug.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\AI_Proj2.dir\Debug.cpp.s /c C:\Users\clays\CLionProjects\AI_Proj2\Debug.cpp
 <<
 
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: CMakeFiles\AI_Proj2.dir\flags.make
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Hanoi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AI_Proj2.dir/Hanoi.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj /FdCMakeFiles\AI_Proj2.dir\ /FS -c C:\Users\clays\CLionProjects\AI_Proj2\Hanoi.cpp
+<<
+
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AI_Proj2.dir/Hanoi.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe > CMakeFiles\AI_Proj2.dir\Hanoi.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\clays\CLionProjects\AI_Proj2\Hanoi.cpp
+<<
+
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AI_Proj2.dir/Hanoi.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\AI_Proj2.dir\Hanoi.cpp.s /c C:\Users\clays\CLionProjects\AI_Proj2\Hanoi.cpp
+<<
+
 # Object files for target AI_Proj2
 AI_Proj2_OBJECTS = \
 "CMakeFiles\AI_Proj2.dir\Main.cpp.obj" \
 "CMakeFiles\AI_Proj2.dir\Disk.cpp.obj" \
 "CMakeFiles\AI_Proj2.dir\Peg.cpp.obj" \
-"CMakeFiles\AI_Proj2.dir\Debug.cpp.obj"
+"CMakeFiles\AI_Proj2.dir\Debug.cpp.obj" \
+"CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj"
 
 # External object files for target AI_Proj2
 AI_Proj2_EXTERNAL_OBJECTS =
@@ -148,9 +168,10 @@ AI_Proj2.exe: CMakeFiles\AI_Proj2.dir\Main.cpp.obj
 AI_Proj2.exe: CMakeFiles\AI_Proj2.dir\Disk.cpp.obj
 AI_Proj2.exe: CMakeFiles\AI_Proj2.dir\Peg.cpp.obj
 AI_Proj2.exe: CMakeFiles\AI_Proj2.dir\Debug.cpp.obj
+AI_Proj2.exe: CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj
 AI_Proj2.exe: CMakeFiles\AI_Proj2.dir\build.make
 AI_Proj2.exe: CMakeFiles\AI_Proj2.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AI_Proj2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable AI_Proj2.exe"
 	"C:\Program Files\JetBrains\CLion 2019.2.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\AI_Proj2.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\AI_Proj2.dir\objects1.rsp @<<
  /out:AI_Proj2.exe /implib:AI_Proj2.lib /pdb:C:\Users\clays\CLionProjects\AI_Proj2\cmake-build-debug\AI_Proj2.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

@@ -10,7 +10,7 @@
 #include "iostream"
 using namespace std;
 
-class Serializeable {
+class IConvertToString {
 public:
     virtual string ToString(){
         return "";
@@ -18,8 +18,8 @@ public:
 };
 
 class Debug {
-public:
-    static void Log(string msg);
+    public: static void Log(string msg);
+    public: static void Log(IConvertToString msg);
 };
 
 
