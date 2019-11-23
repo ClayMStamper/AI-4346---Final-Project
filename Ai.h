@@ -6,6 +6,7 @@
 #define AI_PROJ2_AI_H
 
 #include "Peg.h"
+#include "map"
 
 class Ai {
 

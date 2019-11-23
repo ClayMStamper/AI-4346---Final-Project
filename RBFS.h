@@ -15,7 +15,7 @@ public: //public methods
     explicit RBFS(int diskCount);
     RBFS () = default;
     ~RBFS() = default;
-    vector <Peg> ExpandNode (vector<vector<Peg>> pegsSets) override;
+    vector <Peg> ExpandNode (vector<vector<Peg>> pegSets) override;
 
 private: // private methods
 

@@ -18,6 +18,7 @@ public:
 };
 
 class Debug {
+    public: static bool Draw() { return false;}
     public: static void Log(string msg);
 };
 

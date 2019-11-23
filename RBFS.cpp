@@ -3,15 +3,18 @@
 //
 
 #include "RBFS.h"
-#include "map"
 
-vector<Peg> RBFS::ExpandNode(vector<vector<Peg>> pegsSets) {
+vector<Peg> RBFS::ExpandNode(vector<vector<Peg>> pegSets) {
 
-    Disk disk = pegsSets[0][0].disks.back();
-    pegsSets[0][0].disks.pop_back();
-    pegsSets[0][1].disks.push_back(disk);
+    auto minH = pair <vector<Peg>, int>{pegSets[0], 999999};
 
-    return pegsSets[0];
+    for (int i = 0; i < pegSets.size(); ++i) {
+        int h = H(pegSets[i]); //distance to goal node if this node is expanded
+        if (h < minH.second)
+            minH = {pegSets[i], h};
+    }
+
+    return minH.first;
 
 }
 
