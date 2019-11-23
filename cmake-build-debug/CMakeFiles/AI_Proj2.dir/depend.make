@@ -4,9 +4,17 @@
 CMakeFiles\AI_Proj2.dir\AStar.cpp.obj: ..\AStar.cpp
 CMakeFiles\AI_Proj2.dir\AStar.cpp.obj: ..\AStar.h
 CMakeFiles\AI_Proj2.dir\AStar.cpp.obj: ..\Ai.h
+CMakeFiles\AI_Proj2.dir\AStar.cpp.obj: ..\Debug.h
+CMakeFiles\AI_Proj2.dir\AStar.cpp.obj: ..\Disk.h
+CMakeFiles\AI_Proj2.dir\AStar.cpp.obj: ..\Hanoi.h
+CMakeFiles\AI_Proj2.dir\AStar.cpp.obj: ..\Peg.h
 
 CMakeFiles\AI_Proj2.dir\Ai.cpp.obj: ..\Ai.cpp
 CMakeFiles\AI_Proj2.dir\Ai.cpp.obj: ..\Ai.h
+CMakeFiles\AI_Proj2.dir\Ai.cpp.obj: ..\Debug.h
+CMakeFiles\AI_Proj2.dir\Ai.cpp.obj: ..\Disk.h
+CMakeFiles\AI_Proj2.dir\Ai.cpp.obj: ..\Hanoi.h
+CMakeFiles\AI_Proj2.dir\Ai.cpp.obj: ..\Peg.h
 
 CMakeFiles\AI_Proj2.dir\Debug.cpp.obj: ..\Debug.cpp
 CMakeFiles\AI_Proj2.dir\Debug.cpp.obj: ..\Debug.h
@@ -33,6 +41,10 @@ CMakeFiles\AI_Proj2.dir\Peg.cpp.obj: ..\Peg.cpp
 CMakeFiles\AI_Proj2.dir\Peg.cpp.obj: ..\Peg.h
 
 CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj: ..\Ai.h
+CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj: ..\Debug.h
+CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj: ..\Disk.h
+CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj: ..\Hanoi.h
+CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj: ..\Peg.h
 CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj: ..\RBFS.cpp
 CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj: ..\RBFS.h
 

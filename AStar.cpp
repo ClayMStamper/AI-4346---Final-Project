@@ -3,3 +3,7 @@
 //
 
 #include "AStar.h"
+
+vector<Peg> *AStar::ExpandNode(vector<Peg> *pegs) {
+    return Ai::ExpandNode(pegs);
+}

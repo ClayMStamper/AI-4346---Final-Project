@@ -3,3 +3,7 @@
 //
 
 #include "RBFS.h"
+
+vector<Peg> *RBFS::ExpandNode(vector<Peg> *pegs) {
+    return Ai::ExpandNode(pegs);
+}

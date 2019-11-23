@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/clays/CLionProjects/AI_Proj2/AStar.cpp
+AStar.h
+C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
+
+C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
+Ai.h
+C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
+
+C:/Users/clays/CLionProjects/AI_Proj2/Ai.cpp
+Ai.h
+C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
+
+C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
+Hanoi.h
+C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
+Peg.h
+C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
+
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 string
 -
@@ -30,6 +48,12 @@ C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 
+C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp
+iostream
+C:/Users/clays/CLionProjects/AI_Proj2/iostream
+Hanoi.h
+C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
+
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 vector
 C:/Users/clays/CLionProjects/AI_Proj2/vector
@@ -37,4 +61,12 @@ Disk.h
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
+
+C:/Users/clays/CLionProjects/AI_Proj2/RBFS.cpp
+RBFS.h
+C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
+
+C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
+Ai.h
+C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
 

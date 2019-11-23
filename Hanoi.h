@@ -14,13 +14,17 @@ using namespace std;
 
 class Hanoi : public IConvertToString {
 
-public:
+private: //private fields
+    vector<Peg> pegs;
+
+public: // public methods
     Hanoi(int pegCount, int diskCount);
     string ToString() override;
 
-private:
-    vector<Peg> pegs;
+private: // private methods
     void InitializePegs(int pegCount, int diskCount);
+    void RenderFrame();
+    vector<Peg>* GenerateNodes();
 
 
 };

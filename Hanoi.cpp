@@ -7,7 +7,7 @@
 Hanoi::Hanoi(int pegCount, int diskCount) {
 
     InitializePegs(pegCount, diskCount);
-    Debug::Log(ToString());
+    RenderFrame();
 
 
 }
@@ -26,6 +26,10 @@ string Hanoi::ToString() {
         msg += "\n" + pegs[i].ToString() + "\n";
     }
     return msg;
+}
+
+void Hanoi::RenderFrame() {
+    Debug::Log(ToString());
 }
 
 

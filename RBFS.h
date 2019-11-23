@@ -9,6 +9,14 @@
 
 class RBFS : public Ai {
 
+private:
+
+public:
+    vector <Peg>* ExpandNode (vector<Peg>* pegs) override;
+
+
+private:
+
 };
 
 
