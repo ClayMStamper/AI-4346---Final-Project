@@ -8,11 +8,12 @@ int Ai::G() {
     return 0;
 }
 
-int Ai::H() {
+int Ai::H(vector<Peg> pegs) {
     return 0;
 }
 
-vector<Peg> *Ai::ExpandNode(vector<Peg> *pegs) {
-    return nullptr;
+vector<Peg> Ai::ExpandNode(vector<vector<Peg>> pegsSets) {
+    return vector<Peg>();
 }
+
 

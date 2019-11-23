@@ -26,9 +26,9 @@ public: // public methods
 
 private: // private methods
     void InitializePegs(int pegCount, int diskCount);
-    void Print();
-    void Print(string msg);
-    vector<Peg>* GenerateNodes();
+    void Print(); //print this object
+    void Print(string msg) {Debug::Log(msg);} //print some message
+    vector<vector<Peg>> GenerateNodes();
 
 
 };

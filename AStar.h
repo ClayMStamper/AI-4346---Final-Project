@@ -12,7 +12,7 @@ class AStar : public Ai {
 private:
 
 public:
-    vector <Peg>* ExpandNode (vector<Peg>* pegs) override;
+    vector <Peg> ExpandNode (vector<vector<Peg>> pegsSets) override;
 
 private:
 

@@ -14,8 +14,8 @@ protected:
 
 public:
     int G();
-    int H();
-    virtual vector <Peg>* ExpandNode (vector<Peg>* pegs);
+    int H(vector<Peg> pegs);
+    virtual vector <Peg> ExpandNode (vector<vector<Peg>> pegsSets);
 
 private:
 

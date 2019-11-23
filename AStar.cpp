@@ -4,6 +4,6 @@
 
 #include "AStar.h"
 
-vector<Peg> *AStar::ExpandNode(vector<Peg> *pegs) {
-    return Ai::ExpandNode(pegs);
+vector<Peg> AStar::ExpandNode(vector<vector<Peg>> pegsSets) {
+    return Ai::ExpandNode(pegsSets);
 }

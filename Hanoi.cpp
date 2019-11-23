@@ -7,7 +7,10 @@
 Hanoi::Hanoi(int pegCount, int diskCount) {
 
     InitializePegs(pegCount, diskCount);
+    vector<Peg>* pegsPtr = &pegs;
     brain = RBFS(diskCount);
+    pegs = brain.ExpandNode(GenerateNodes());
+
     Print();
 
 }
@@ -32,12 +35,10 @@ void Hanoi::Print() {
     Debug::Log(ToString());
 }
 
-vector<Peg> *Hanoi::GenerateNodes() {
-    return nullptr;
+vector<vector<Peg>> Hanoi::GenerateNodes() {
+    return vector<vector<Peg>>{pegs};
 }
 
-void Hanoi::Print(string msg) {
-    Debug::Log(msg);
-}
+
 
 
