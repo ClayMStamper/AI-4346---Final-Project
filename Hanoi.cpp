@@ -8,6 +8,7 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
 
     InitializePegs(pegCount, diskCount);
     brain = RBFS(diskCount);
+    Print();
 
 }
 

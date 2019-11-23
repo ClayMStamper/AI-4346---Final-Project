@@ -13,7 +13,10 @@ class Peg : public IConvertToString {
 
 public:
     std::vector<Disk> disks;
+
+public:
     Peg(int ringCount, int height);
+    ~Peg() = default;
     string ToString() override;
     string GetOffsetSpace(int width);
 

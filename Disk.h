@@ -12,9 +12,12 @@
 
 class Disk : public IConvertToString {
 
-public:
+public: // public fields
     int width;
+
+public: //public methods
     Disk(int);
+    ~Disk() = default;
     bool CanStackOn(Disk);
     string ToString() override;
 
