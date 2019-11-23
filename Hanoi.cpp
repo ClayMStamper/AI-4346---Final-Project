@@ -9,8 +9,8 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
     InitializePegs(pegCount, diskCount);
     vector<Peg>* pegsPtr = &pegs;
     brain = RBFS(diskCount);
+    Print();
     pegs = brain.ExpandNode(GenerateNodes());
-
     Print();
 
 }
@@ -36,7 +36,43 @@ void Hanoi::Print() {
 }
 
 vector<vector<Peg>> Hanoi::GenerateNodes() {
-    return vector<vector<Peg>>{pegs};
+    auto nodes =  vector<vector<Peg>>{pegs}; //set of possible pegs
+    for (int i = 0; i < pegs.size(); ++i) { //go through each actual peg
+
+        auto possiblePegSet = GenerateNodes(i); //get possible sets of pegs if this peg's disk is moved
+        for (int j = 0; j < possiblePegSet.size(); ++j) { //loop through possible sets from this move
+            nodes.push_back(possiblePegSet[j]); //add possible sets to "nodes"
+        }
+
+    }
+    return nodes;
+}
+
+vector<vector<Peg>> Hanoi::GenerateNodes(int thisPeg) {
+
+    auto nodes = vector<vector<Peg>>();
+
+    for (int i = 0; i < pegs.size(); ++i) {
+        if (thisPeg != i && CanMove(pegs[thisPeg], pegs[i])){
+            auto tempPegs = pegs;
+            Disk moveDisk = pegs[thisPeg].disks.back();
+            tempPegs[thisPeg].disks.pop_back();
+            tempPegs[i].disks.push_back(moveDisk);
+            nodes.push_back(tempPegs);
+        }
+    }
+
+    return nodes;
+}
+
+bool Hanoi::CanMove(Peg a, Peg b) {
+
+    if (a.disks.empty())
+        return false;
+    if (b.disks.empty())
+        return true;
+    return (a.disks.back().width < b.disks.back().width);
+
 }
 
 

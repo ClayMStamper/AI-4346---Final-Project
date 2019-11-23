@@ -29,7 +29,8 @@ private: // private methods
     void Print(); //print this object
     void Print(string msg) {Debug::Log(msg);} //print some message
     vector<vector<Peg>> GenerateNodes();
-
+    vector<vector<Peg>> GenerateNodes(int thisPeg);
+    bool CanMove(Peg a, Peg b);
 
 };
 

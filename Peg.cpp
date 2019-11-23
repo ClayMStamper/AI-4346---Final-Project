@@ -45,3 +45,4 @@ string Peg::GetOffsetSpace(int width) {
 
     return space;
 }
+
