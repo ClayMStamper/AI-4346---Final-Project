@@ -2,6 +2,8 @@
   <dictionary name="clays">
     <words>
       <w>delim</w>
+      <w>proj</w>
+      <w>rbfs</w>
     </words>
   </dictionary>
 </component>

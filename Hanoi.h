@@ -6,13 +6,22 @@
 #define AI_PROJ2_HANOI_H
 
 
-class Hanoi {
+#include <vector>
+#include "Debug.h"
+#include "Peg.h"
+
+using namespace std;
+
+class Hanoi : public IConvertToString {
 
 public:
     Hanoi(int pegCount, int diskCount);
+    string ToString() override;
 
 private:
-    //vector
+    vector<Peg> pegs;
+    void InitializePegs(int pegCount, int diskCount);
+
 
 };
 

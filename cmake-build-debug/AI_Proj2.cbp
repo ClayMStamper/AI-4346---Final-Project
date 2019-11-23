@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/AStar.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/AStar.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Ai.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Ai.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
 		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Debug.cpp">
 			<Option target="AI_Proj2"/>
 		</Unit>
@@ -107,6 +119,12 @@
 			<Option target="AI_Proj2"/>
 		</Unit>
 		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Peg.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/RBFS.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h">
 			<Option target="AI_Proj2"/>
 		</Unit>
 		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/CMakeLists.txt">

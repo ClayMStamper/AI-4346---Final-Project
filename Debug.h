@@ -19,7 +19,6 @@ public:
 
 class Debug {
     public: static void Log(string msg);
-    public: static void Log(IConvertToString msg);
 };
 
 

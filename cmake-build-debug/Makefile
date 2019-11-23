@@ -124,6 +124,60 @@ AI_Proj2\fast:
 	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\build
 .PHONY : AI_Proj2\fast
 
+AStar.obj: AStar.cpp.obj
+
+.PHONY : AStar.obj
+
+# target to build an object file
+AStar.cpp.obj:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\AStar.cpp.obj
+.PHONY : AStar.cpp.obj
+
+AStar.i: AStar.cpp.i
+
+.PHONY : AStar.i
+
+# target to preprocess a source file
+AStar.cpp.i:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\AStar.cpp.i
+.PHONY : AStar.cpp.i
+
+AStar.s: AStar.cpp.s
+
+.PHONY : AStar.s
+
+# target to generate assembly for a file
+AStar.cpp.s:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\AStar.cpp.s
+.PHONY : AStar.cpp.s
+
+Ai.obj: Ai.cpp.obj
+
+.PHONY : Ai.obj
+
+# target to build an object file
+Ai.cpp.obj:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Ai.cpp.obj
+.PHONY : Ai.cpp.obj
+
+Ai.i: Ai.cpp.i
+
+.PHONY : Ai.i
+
+# target to preprocess a source file
+Ai.cpp.i:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Ai.cpp.i
+.PHONY : Ai.cpp.i
+
+Ai.s: Ai.cpp.s
+
+.PHONY : Ai.s
+
+# target to generate assembly for a file
+Ai.cpp.s:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Ai.cpp.s
+.PHONY : Ai.cpp.s
+
 Debug.obj: Debug.cpp.obj
 
 .PHONY : Debug.obj
@@ -259,6 +313,33 @@ Peg.cpp.s:
 	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Peg.cpp.s
 .PHONY : Peg.cpp.s
 
+RBFS.obj: RBFS.cpp.obj
+
+.PHONY : RBFS.obj
+
+# target to build an object file
+RBFS.cpp.obj:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\RBFS.cpp.obj
+.PHONY : RBFS.cpp.obj
+
+RBFS.i: RBFS.cpp.i
+
+.PHONY : RBFS.i
+
+# target to preprocess a source file
+RBFS.cpp.i:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\RBFS.cpp.i
+.PHONY : RBFS.cpp.i
+
+RBFS.s: RBFS.cpp.s
+
+.PHONY : RBFS.s
+
+# target to generate assembly for a file
+RBFS.cpp.s:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\RBFS.cpp.s
+.PHONY : RBFS.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -268,6 +349,12 @@ help:
 	@echo ... AI_Proj2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AStar.obj
+	@echo ... AStar.i
+	@echo ... AStar.s
+	@echo ... Ai.obj
+	@echo ... Ai.i
+	@echo ... Ai.s
 	@echo ... Debug.obj
 	@echo ... Debug.i
 	@echo ... Debug.s
@@ -283,6 +370,9 @@ help:
 	@echo ... Peg.obj
 	@echo ... Peg.i
 	@echo ... Peg.s
+	@echo ... RBFS.obj
+	@echo ... RBFS.i
+	@echo ... RBFS.s
 .PHONY : help
 
 

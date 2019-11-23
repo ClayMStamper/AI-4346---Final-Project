@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/clays/CLionProjects/AI_Proj2/Debug.cpp
-Debug.h
-C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 string
 -
 iostream
 C:/Users/clays/CLionProjects/AI_Proj2/iostream
-
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.cpp
-Disk.h
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 string
@@ -26,17 +18,15 @@ string
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 
-C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp
-iostream
-C:/Users/clays/CLionProjects/AI_Proj2/iostream
-Disk.h
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
-Peg.h
-C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
+C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.cpp
+Hanoi.h
+C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
+
+C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
+vector
+-
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Peg.cpp
 Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 
