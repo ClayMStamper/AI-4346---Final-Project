@@ -5,12 +5,12 @@
 #ifndef AI_PROJ2_AI_H
 #define AI_PROJ2_AI_H
 
-#include "Hanoi.h"
 #include "Peg.h"
 
 class Ai {
 
-private:
+protected:
+    int diskCount;
 
 public:
     int G();

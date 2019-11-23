@@ -15,3 +15,4 @@ int Ai::H() {
 vector<Peg> *Ai::ExpandNode(vector<Peg> *pegs) {
     return nullptr;
 }
+

@@ -6,21 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.cpp
-AStar.h
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
-Ai.h
 C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.cpp
-Ai.h
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
-Hanoi.h
-C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
 Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 
@@ -47,6 +33,8 @@ Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
+RBFS.h
+C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp
 iostream

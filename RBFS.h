@@ -9,13 +9,15 @@
 
 class RBFS : public Ai {
 
-private:
+private: // private fields
 
-public:
+public: //public methods
+    explicit RBFS(int diskCount);
+    RBFS () = default;
+    ~RBFS() = default;
     vector <Peg>* ExpandNode (vector<Peg>* pegs) override;
 
-
-private:
+private: // private methods
 
 };
 

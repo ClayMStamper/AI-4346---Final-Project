@@ -7,8 +7,7 @@
 Hanoi::Hanoi(int pegCount, int diskCount) {
 
     InitializePegs(pegCount, diskCount);
-    RenderFrame();
-
+    brain = RBFS(diskCount);
 
 }
 
@@ -28,8 +27,16 @@ string Hanoi::ToString() {
     return msg;
 }
 
-void Hanoi::RenderFrame() {
+void Hanoi::Print() {
     Debug::Log(ToString());
+}
+
+vector<Peg> *Hanoi::GenerateNodes() {
+    return nullptr;
+}
+
+void Hanoi::Print(string msg) {
+    Debug::Log(msg);
 }
 
 
