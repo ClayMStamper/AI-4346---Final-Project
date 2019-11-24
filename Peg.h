@@ -19,6 +19,7 @@ public:
     ~Peg() = default;
     string ToString() override;
     string GetOffsetSpace(int width);
+    bool HasDisk(int width); // used to check goal peg for Heuristic
 
 private:
     string pegChar = "||";

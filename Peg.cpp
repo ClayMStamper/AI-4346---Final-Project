@@ -50,3 +50,11 @@ string Peg::GetOffsetSpace(int width) {
     return space;
 }
 
+bool Peg::HasDisk(int width) {
+    for (int i = 0; i < disks.size(); ++i) {
+        if (disks[i].width == width)
+            return true;
+    }
+    return false;
+}
+

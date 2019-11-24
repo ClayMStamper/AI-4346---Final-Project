@@ -18,7 +18,7 @@ using namespace std;
 class Hanoi : public IConvertToString {
 
 private: //private fields
-    Node startNode;
+    Node currentNode;
     Node goalNode;
     RBFS brain = RBFS();
 

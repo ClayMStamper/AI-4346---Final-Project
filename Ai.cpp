@@ -11,14 +11,15 @@ int Ai::G() {
 int Ai::H(Node actual, Node goal) {
     int dist = 0;
 
-    print ("Goal pegs" + to_string(goal.pegs.size()));
-    print ("Actual pegs" + to_string(actual.pegs.size()));
+    //if goal peg !has some disk
+     // dist += disk.width squared
 
+     Peg goalPeg = actual.pegs.back();
     for (int i = 0; i < actual.pegs.size(); ++i) {
-      //  int goalPeg = goal.pegs[i].disks.size();
-        //int actualPeg = current.pegs[i].disks.size();
-      //  dist += abs(goalPeg - actualPeg); //difference in disk count on each peg
+        if (!goalPeg.HasDisk(i))
+            dist += i * i;
     }
+
     return dist;
 }
 
