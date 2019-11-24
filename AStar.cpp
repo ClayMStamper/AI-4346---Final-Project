@@ -5,6 +5,6 @@
 #include "AStar.h"
 #include "NodeSet.h"
 
-Node AStar::ExpandNode(NodeSet nodeSet, Node goal) {
+Node AStar::ExpandNode(Node n) {
     return Node();
 }

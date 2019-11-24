@@ -13,7 +13,9 @@ class AStar : public Ai {
 private:
 
 public:
-    Node ExpandNode (NodeSet nodeSet, Node goal) override;
+    AStar() {}
+
+    Node ExpandNode(Node n) override;
 
 private:
 

@@ -12,3 +12,11 @@ string Node::ToString() {
     }
     return msg;
 }
+
+bool Node::operator==(Node other) {
+    for (int i = 0; i < pegs.size(); ++i) {
+        if (!(pegs[i] == other.pegs[i]))
+            return false; //not all pegs are the same
+    }
+    return true;
+}

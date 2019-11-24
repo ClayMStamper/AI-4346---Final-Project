@@ -19,6 +19,9 @@ public:
     ~NodeSet() = default;
     string ToString() override ;
     int Size() { return nodes.size();}
+    bool Contains(Node node);
+    void operator += (Node other);
+    void operator -= (Node other);
 
 private:
 

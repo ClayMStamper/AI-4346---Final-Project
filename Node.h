@@ -24,6 +24,7 @@ public:
     ~Node() = default;
     string ToString() override;
     int Size() { return  pegs.size();} //should always be 3
+    bool operator == (Node other);
 
 private:
 

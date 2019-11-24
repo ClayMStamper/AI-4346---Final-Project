@@ -58,3 +58,16 @@ bool Peg::HasDisk(int width) {
     return false;
 }
 
+bool Peg::operator==(Peg other) {
+
+    if (disks.size() != other.disks.size())
+        return false; //different amount of disks
+
+    for (int i = 0; i < disks.size(); ++i) {
+        if (disks[i].width != other.disks[i].width)
+            return false; // disks not stacked the same way
+    }
+
+    return true;
+}
+

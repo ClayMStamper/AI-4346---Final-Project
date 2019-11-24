@@ -39,14 +39,8 @@ utility
 -
 vector
 -
-Debug.h
-C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-Peg.h
-C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
-RBFS.h
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
-NodeSet.h
-C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
+Ai.h
+C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Node.h
 utility
@@ -71,8 +65,4 @@ Disk.h
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
-Ai.h
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
 

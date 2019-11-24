@@ -14,13 +14,23 @@
 class Ai : public IConvertToString {
 
 protected:
-    int diskCount;
+    int diskCount = 3;
+    Node startNode;
 
 public:
+    NodeSet openStack = NodeSet({});
+    NodeSet closedStack = NodeSet({});
+
+public:
+    Ai() = default;
+    Ai(int diskCount, Node startNode);
+    ~Ai() = default;
     int G();
     int H(Node actual);
-    virtual Node ExpandNode (NodeSet nodeSet, Node goal);
+    virtual Node ExpandNode(Node n);
     string ToString() override;
+    void GenerateNodes(Node n);
+    bool CanMove(Peg a, Peg b);
 
 private:
 

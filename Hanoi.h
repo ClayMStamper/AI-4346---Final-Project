@@ -8,19 +8,16 @@
 
 #include <utility>
 #include <vector>
-#include "Debug.h"
-#include "Peg.h"
-#include "RBFS.h"
-#include "NodeSet.h"
+#include "Ai.h"
 
 using namespace std;
 
 class Hanoi : public IConvertToString {
 
 private: //private fields
-    Node currentNode;
+    Node startNode;
     Node goalNode;
-    RBFS brain = RBFS();
+    Ai brain = Ai(3, Node());
 
 public: // public methods
     Hanoi() = default;
@@ -29,10 +26,8 @@ public: // public methods
     string ToString() override;
 
 private: // private methods
-    void InitializeCurrent(int pegCount, int diskCount);
-    void InitializeTarget(int pegCount, int diskCount);
-    NodeSet GenerateNodes();
-    NodeSet GenerateNodes(int thisPeg);
+    void InitializeStart(int pegCount, int diskCount);
+    void InitializeGoal(int pegCount, int diskCount);
     bool CanMove(Peg a, Peg b);
 
 };
