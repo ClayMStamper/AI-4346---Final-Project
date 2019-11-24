@@ -12,10 +12,9 @@
 class NodeSet : public IConvertToString {
 
 public:
-    vector<Node> nodes;
+    vector<Node> nodes = vector<Node>();
 
 public:
-    NodeSet() = default;
     explicit NodeSet(vector<Node> nodes) {this->nodes = std::move(nodes); }
     ~NodeSet() = default;
     string ToString() override ;

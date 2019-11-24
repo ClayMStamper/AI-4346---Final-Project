@@ -30,6 +30,7 @@ public: // public methods
 
 private: // private methods
     void InitializeCurrent(int pegCount, int diskCount);
+    void InitializeTarget(int pegCount, int diskCount);
     void print(); //print this object
     static void print(string msg) {Debug::Log(std::move(msg));} //print some message
     NodeSet GenerateNodes();

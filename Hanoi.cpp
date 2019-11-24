@@ -13,17 +13,27 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
     );
 
     InitializeCurrent(pegCount, diskCount);
-    print(currentState.ToString());
-    print(GenerateNodes().ToString());
+    InitializeTarget(pegCount, diskCount);
     brain = RBFS(diskCount);
+
+    currentState = move(brain.ExpandNode(GenerateNodes()));
+    print(currentState.ToString());
 
 }
 
 void Hanoi::InitializeCurrent(int pegCount, int diskCount) {
     currentState.pegs.emplace_back(diskCount, diskCount); //first peg with disks
     for (int i = 1; i < pegCount; ++i) {
+
         currentState.pegs.emplace_back(0, pegCount); // all other empty currentState->pegs
     }
+}
+
+void Hanoi::InitializeTarget(int pegCount, int diskCount) {
+    for (int i = 0; i < pegCount - 1; ++i) {
+        targetState.pegs.emplace_back(0, pegCount); // all other empty currentState->pegs
+    }
+    targetState.pegs.emplace_back(diskCount, diskCount); //first peg with disks
 }
 
 string Hanoi::ToString() {
@@ -40,7 +50,7 @@ void Hanoi::print() {
 }
 
 NodeSet Hanoi::GenerateNodes() {
-    auto nodeSet = NodeSet();//set of possible currentState->pegs
+    auto nodeSet = NodeSet({});//set of possible currentState->pegs
     for (int i = 0; i < currentState.pegs.size(); ++i) { //go through each actual peg
 
         auto openNodes = GenerateNodes(i); //get possible sets of currentState->pegs if this peg's disk is moved
@@ -54,15 +64,17 @@ NodeSet Hanoi::GenerateNodes() {
 
 NodeSet Hanoi::GenerateNodes(int thisPeg) {
 
-    auto nodeSet = NodeSet();
+    auto nodeSet = NodeSet({});
 
     for (int i = 0; i < currentState.pegs.size(); ++i) {
         if (thisPeg != i && CanMove(currentState.pegs[thisPeg], currentState.pegs[i])){
-            auto tempPegs = currentState.pegs;
+            //print("current: \n" + currentState.ToString());
+            Node newNode = Node(currentState.pegs);
+            //print("tmp copied pegs: \n" + newNode.ToString());
             Disk moveDisk = currentState.pegs[thisPeg].disks.back();
-            tempPegs[thisPeg].disks.pop_back();
-            tempPegs[i].disks.push_back(moveDisk);
-            nodeSet.nodes.emplace_back(tempPegs);
+            newNode.pegs[thisPeg].disks.pop_back();
+            newNode.pegs[i].disks.push_back(moveDisk);
+            nodeSet.nodes.emplace_back(newNode);
         }
     }
 
