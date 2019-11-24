@@ -15,7 +15,7 @@ public: //public methods
     explicit RBFS(int diskCount);
     RBFS () = default;
     ~RBFS() = default;
-    Node ExpandNode (NodeSet nodeSet) override;
+    Node ExpandNode (NodeSet nodeSet, Node goal) override;
 
 private: // private methods
 

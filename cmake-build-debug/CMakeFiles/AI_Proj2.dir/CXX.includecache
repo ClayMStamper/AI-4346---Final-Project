@@ -7,10 +7,14 @@
 #IncludeRegexTransform: 
 
 C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
-Peg.h
-C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
+cstdlib
+C:/Users/clays/CLionProjects/AI_Proj2/cstdlib
 map
 C:/Users/clays/CLionProjects/AI_Proj2/map
+Debug.h
+C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
+Peg.h
+C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 NodeSet.h
 C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
 

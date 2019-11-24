@@ -18,8 +18,8 @@ using namespace std;
 class Hanoi : public IConvertToString {
 
 private: //private fields
-    Node currentState;
-    Node targetState;
+    Node startNode;
+    Node goalNode;
     RBFS brain = RBFS();
 
 public: // public methods
@@ -31,8 +31,6 @@ public: // public methods
 private: // private methods
     void InitializeCurrent(int pegCount, int diskCount);
     void InitializeTarget(int pegCount, int diskCount);
-    void print(); //print this object
-    static void print(string msg) {Debug::Log(std::move(msg));} //print some message
     NodeSet GenerateNodes();
     NodeSet GenerateNodes(int thisPeg);
     bool CanMove(Peg a, Peg b);

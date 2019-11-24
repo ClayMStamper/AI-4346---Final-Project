@@ -5,55 +5,48 @@
 #include "Hanoi.h"
 
 Hanoi::Hanoi(int pegCount, int diskCount) {
-    currentState = Node();
-    targetState = Node(
-            {{Peg(0, diskCount)},
-            {Peg(0, diskCount)},
-            {Peg(diskCount, diskCount)}}
-    );
+    startNode = Node();
+    goalNode = Node();
 
     InitializeCurrent(pegCount, diskCount);
     InitializeTarget(pegCount, diskCount);
     brain = RBFS(diskCount);
 
-    currentState = move(brain.ExpandNode(GenerateNodes()));
-    print(currentState.ToString());
+    startNode = brain.ExpandNode(GenerateNodes(), goalNode);
+    print(startNode.ToString());
+    goalNode.print();
 
 }
 
 void Hanoi::InitializeCurrent(int pegCount, int diskCount) {
-    currentState.pegs.emplace_back(diskCount, diskCount); //first peg with disks
+    startNode.pegs.emplace_back(diskCount, diskCount); //first peg with disks
     for (int i = 1; i < pegCount; ++i) {
 
-        currentState.pegs.emplace_back(0, pegCount); // all other empty currentState->pegs
+        startNode.pegs.emplace_back(0, pegCount); // all other empty startNode->pegs
     }
 }
 
 void Hanoi::InitializeTarget(int pegCount, int diskCount) {
     for (int i = 0; i < pegCount - 1; ++i) {
-        targetState.pegs.emplace_back(0, pegCount); // all other empty currentState->pegs
+        goalNode.pegs.emplace_back(0, pegCount); // all other empty startNode->pegs
     }
-    targetState.pegs.emplace_back(diskCount, diskCount); //first peg with disks
+    goalNode.pegs.emplace_back(diskCount, diskCount); //first peg with disks
 }
 
 string Hanoi::ToString() {
     string msg;
-    for (int i = 0; i < currentState.pegs.size() ; ++i) {
+    for (int i = 0; i < startNode.pegs.size() ; ++i) {
         msg += "\n--------------\nPeg: " + to_string(i) + "\n";
-        msg += "\n" + currentState.pegs[i].ToString() + "\n";
+        msg += "\n" + startNode.pegs[i].ToString() + "\n";
     }
     return msg;
 }
 
-void Hanoi::print() {
-    Debug::Log(ToString());
-}
-
 NodeSet Hanoi::GenerateNodes() {
-    auto nodeSet = NodeSet({});//set of possible currentState->pegs
-    for (int i = 0; i < currentState.pegs.size(); ++i) { //go through each actual peg
+    auto nodeSet = NodeSet({});//set of possible startNode->pegs
+    for (int i = 0; i < startNode.pegs.size(); ++i) { //go through each actual peg
 
-        auto openNodes = GenerateNodes(i); //get possible sets of currentState->pegs if this peg's disk is moved
+        auto openNodes = GenerateNodes(i); //get possible sets of startNode->pegs if this peg's disk is moved
         for (int j = 0; j < openNodes.Size(); ++j) { //loop through possible sets from this move
             nodeSet.nodes.push_back(openNodes.nodes[j]); //add possible sets to "nodeSet"
         }
@@ -66,12 +59,12 @@ NodeSet Hanoi::GenerateNodes(int thisPeg) {
 
     auto nodeSet = NodeSet({});
 
-    for (int i = 0; i < currentState.pegs.size(); ++i) {
-        if (thisPeg != i && CanMove(currentState.pegs[thisPeg], currentState.pegs[i])){
-            //print("current: \n" + currentState.ToString());
-            Node newNode = Node(currentState.pegs);
+    for (int i = 0; i < startNode.pegs.size(); ++i) {
+        if (thisPeg != i && CanMove(startNode.pegs[thisPeg], startNode.pegs[i])){
+            //print("current: \n" + startNode.ToString());
+            Node newNode = Node(startNode.pegs);
             //print("tmp copied pegs: \n" + newNode.ToString());
-            Disk moveDisk = currentState.pegs[thisPeg].disks.back();
+            Disk moveDisk = startNode.pegs[thisPeg].disks.back();
             newNode.pegs[thisPeg].disks.pop_back();
             newNode.pegs[i].disks.push_back(moveDisk);
             nodeSet.nodes.emplace_back(newNode);

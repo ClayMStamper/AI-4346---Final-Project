@@ -5,6 +5,6 @@
 #include "AStar.h"
 #include "NodeSet.h"
 
-Node AStar::ExpandNode(NodeSet pegsSets) {
-    return Ai::ExpandNode(pegsSets);
+Node AStar::ExpandNode(NodeSet nodeSet, Node goal) {
+    return Node();
 }

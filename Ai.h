@@ -5,19 +5,22 @@
 #ifndef AI_PROJ2_AI_H
 #define AI_PROJ2_AI_H
 
-#include "Peg.h"
+#include "cstdlib"
 #include "map"
+#include "Debug.h"
+#include "Peg.h"
 #include "NodeSet.h"
 
-class Ai {
+class Ai : public IConvertToString {
 
 protected:
     int diskCount;
 
 public:
     int G();
-    int H(Node pegs);
-    virtual Node ExpandNode (NodeSet pegsSets);
+    int H(Node actual, Node goal);
+    virtual Node ExpandNode (NodeSet nodeSet, Node goal);
+    string ToString() override;
 
 private:
 
