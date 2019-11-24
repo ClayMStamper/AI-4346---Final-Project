@@ -9,9 +9,8 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
     InitializePegs(pegCount, diskCount);
     vector<Peg>* pegsPtr = &pegs;
     brain = RBFS(diskCount);
-    Print();
     pegs = brain.ExpandNode(GenerateNodes());
-    Print();
+    Print(GenerateNodes());
 
 }
 
@@ -73,6 +72,23 @@ bool Hanoi::CanMove(Peg a, Peg b) {
         return true;
     return (a.disks.back().width < b.disks.back().width);
 
+}
+
+void Hanoi::Print(vector<vector<Peg>> nodes) {
+    for (int i = 0; i < nodes.size(); ++i) {
+        Print("\n===========\nNode: " + to_string(i) + "\n");
+        auto pegsToPrint = nodes[i];
+        Print(pegsToPrint);
+    }
+}
+
+void Hanoi::Print(vector<Peg> pegsToPrint) {
+    string msg;
+    for (int j = 0; j < pegsToPrint.size() ; ++j) {
+        msg += "--------------\nPeg: " + to_string(j);
+        msg += "\n" + pegsToPrint[j].ToString() + "\n";
+    }
+    Print(msg);
 }
 
 

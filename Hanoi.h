@@ -28,6 +28,8 @@ private: // private methods
     void InitializePegs(int pegCount, int diskCount);
     void Print(); //print this object
     void Print(string msg) {Debug::Log(msg);} //print some message
+    void Print (vector<vector<Peg>> nodes);
+    void Print (vector<Peg> pegsToPrint);
     vector<vector<Peg>> GenerateNodes();
     vector<vector<Peg>> GenerateNodes(int thisPeg);
     bool CanMove(Peg a, Peg b);
