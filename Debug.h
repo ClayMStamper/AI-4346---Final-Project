@@ -12,7 +12,7 @@ using namespace std;
 
 
 class Debug {
-public: static bool Draw() { return false;}
+public: static bool Draw() { return true;}
 public: static void Log(string msg);
 };
 

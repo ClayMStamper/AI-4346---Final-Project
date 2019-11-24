@@ -18,7 +18,7 @@ protected:
 
 public:
     int G();
-    int H(Node actual, Node goal);
+    int H(Node actual);
     virtual Node ExpandNode (NodeSet nodeSet, Node goal);
     string ToString() override;
 

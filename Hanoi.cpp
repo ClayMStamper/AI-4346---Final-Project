@@ -12,7 +12,8 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
     InitializeTarget(pegCount, diskCount);
     brain = RBFS(diskCount);
 
-    for (int i = 0; i < 4; ++i) {
+//    for (int i = 0; i < 8; ++i) {
+    for (int i = 0; currentNode.pegs.back().disks.size() < diskCount; ++i) {
         print("itr: " +to_string(i));
         currentNode = brain.ExpandNode(GenerateNodes(), goalNode);
         print(currentNode.ToString());
