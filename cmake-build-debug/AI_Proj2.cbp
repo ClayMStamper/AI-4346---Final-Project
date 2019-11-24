@@ -115,6 +115,18 @@
 		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp">
 			<Option target="AI_Proj2"/>
 		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Node.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Node.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.cpp">
+			<Option target="AI_Proj2"/>
+		</Unit>
+		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h">
+			<Option target="AI_Proj2"/>
+		</Unit>
 		<Unit filename="C:/Users/clays/CLionProjects/AI_Proj2/Peg.cpp">
 			<Option target="AI_Proj2"/>
 		</Unit>

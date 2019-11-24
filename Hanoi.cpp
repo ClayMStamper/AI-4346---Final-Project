@@ -5,63 +5,68 @@
 #include "Hanoi.h"
 
 Hanoi::Hanoi(int pegCount, int diskCount) {
+    currentState = Node();
+    targetState = Node(
+            {{Peg(0, diskCount)},
+            {Peg(0, diskCount)},
+            {Peg(diskCount, diskCount)}}
+    );
 
-    InitializePegs(pegCount, diskCount);
-    vector<Peg>* pegsPtr = &pegs;
+    InitializeCurrent(pegCount, diskCount);
+    print(currentState.ToString());
+    print(GenerateNodes().ToString());
     brain = RBFS(diskCount);
-    pegs = brain.ExpandNode(GenerateNodes());
-    Print(GenerateNodes());
 
 }
 
-void Hanoi::InitializePegs(int pegCount, int diskCount) {
-    pegs.emplace_back(diskCount, diskCount); //first peg with disks
+void Hanoi::InitializeCurrent(int pegCount, int diskCount) {
+    currentState.pegs.emplace_back(diskCount, diskCount); //first peg with disks
     for (int i = 1; i < pegCount; ++i) {
-        pegs.emplace_back(0, pegCount); // all other empty pegs
+        currentState.pegs.emplace_back(0, pegCount); // all other empty currentState->pegs
     }
 }
 
 string Hanoi::ToString() {
     string msg;
-    for (int i = 0; i < pegs.size() ; ++i) {
+    for (int i = 0; i < currentState.pegs.size() ; ++i) {
         msg += "\n--------------\nPeg: " + to_string(i) + "\n";
-        msg += "\n" + pegs[i].ToString() + "\n";
+        msg += "\n" + currentState.pegs[i].ToString() + "\n";
     }
     return msg;
 }
 
-void Hanoi::Print() {
+void Hanoi::print() {
     Debug::Log(ToString());
 }
 
-vector<vector<Peg>> Hanoi::GenerateNodes() {
-    auto nodes =  vector<vector<Peg>>{pegs}; //set of possible pegs
-    for (int i = 0; i < pegs.size(); ++i) { //go through each actual peg
+NodeSet Hanoi::GenerateNodes() {
+    auto nodeSet = NodeSet();//set of possible currentState->pegs
+    for (int i = 0; i < currentState.pegs.size(); ++i) { //go through each actual peg
 
-        auto possiblePegSet = GenerateNodes(i); //get possible sets of pegs if this peg's disk is moved
-        for (int j = 0; j < possiblePegSet.size(); ++j) { //loop through possible sets from this move
-            nodes.push_back(possiblePegSet[j]); //add possible sets to "nodes"
+        auto openNodes = GenerateNodes(i); //get possible sets of currentState->pegs if this peg's disk is moved
+        for (int j = 0; j < openNodes.Size(); ++j) { //loop through possible sets from this move
+            nodeSet.nodes.push_back(openNodes.nodes[j]); //add possible sets to "nodeSet"
         }
 
     }
-    return nodes;
+    return nodeSet;
 }
 
-vector<vector<Peg>> Hanoi::GenerateNodes(int thisPeg) {
+NodeSet Hanoi::GenerateNodes(int thisPeg) {
 
-    auto nodes = vector<vector<Peg>>();
+    auto nodeSet = NodeSet();
 
-    for (int i = 0; i < pegs.size(); ++i) {
-        if (thisPeg != i && CanMove(pegs[thisPeg], pegs[i])){
-            auto tempPegs = pegs;
-            Disk moveDisk = pegs[thisPeg].disks.back();
+    for (int i = 0; i < currentState.pegs.size(); ++i) {
+        if (thisPeg != i && CanMove(currentState.pegs[thisPeg], currentState.pegs[i])){
+            auto tempPegs = currentState.pegs;
+            Disk moveDisk = currentState.pegs[thisPeg].disks.back();
             tempPegs[thisPeg].disks.pop_back();
             tempPegs[i].disks.push_back(moveDisk);
-            nodes.push_back(tempPegs);
+            nodeSet.nodes.emplace_back(tempPegs);
         }
     }
 
-    return nodes;
+    return nodeSet;
 }
 
 bool Hanoi::CanMove(Peg a, Peg b) {
@@ -74,22 +79,7 @@ bool Hanoi::CanMove(Peg a, Peg b) {
 
 }
 
-void Hanoi::Print(vector<vector<Peg>> nodes) {
-    for (int i = 0; i < nodes.size(); ++i) {
-        Print("\n===========\nNode: " + to_string(i) + "\n");
-        auto pegsToPrint = nodes[i];
-        Print(pegsToPrint);
-    }
-}
 
-void Hanoi::Print(vector<Peg> pegsToPrint) {
-    string msg;
-    for (int j = 0; j < pegsToPrint.size() ; ++j) {
-        msg += "--------------\nPeg: " + to_string(j);
-        msg += "\n" + pegsToPrint[j].ToString() + "\n";
-    }
-    Print(msg);
-}
 
 
 

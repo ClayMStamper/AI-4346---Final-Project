@@ -7,12 +7,16 @@ CMakeFiles/AI_Proj2.dir/AStar.cpp.obj
  C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
  C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
  C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+ C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
  C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 CMakeFiles/AI_Proj2.dir/Ai.cpp.obj
  C:/Users/clays/CLionProjects/AI_Proj2/Ai.cpp
  C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
  C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
  C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+ C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
  C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 CMakeFiles/AI_Proj2.dir/Debug.cpp.obj
  C:/Users/clays/CLionProjects/AI_Proj2/Debug.cpp
@@ -27,6 +31,8 @@ CMakeFiles/AI_Proj2.dir/Hanoi.cpp.obj
  C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
  C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.cpp
  C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+ C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
  C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
  C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
 CMakeFiles/AI_Proj2.dir/Main.cpp.obj
@@ -35,8 +41,23 @@ CMakeFiles/AI_Proj2.dir/Main.cpp.obj
  C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
  C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
  C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+ C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
  C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
  C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
+CMakeFiles/AI_Proj2.dir/Node.cpp.obj
+ C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.cpp
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
+CMakeFiles/AI_Proj2.dir/NodeSet.cpp.obj
+ C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+ C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.cpp
+ C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 CMakeFiles/AI_Proj2.dir/Peg.cpp.obj
  C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
  C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
@@ -46,6 +67,8 @@ CMakeFiles/AI_Proj2.dir/RBFS.cpp.obj
  C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
  C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
  C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
+ C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+ C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
  C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
  C:/Users/clays/CLionProjects/AI_Proj2/RBFS.cpp
  C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h

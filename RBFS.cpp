@@ -4,14 +4,16 @@
 
 #include "RBFS.h"
 
-vector<Peg> RBFS::ExpandNode(vector<vector<Peg>> pegSets) {
+Node RBFS::ExpandNode(NodeSet nodeSet) {
 
-    auto minH = pair <vector<Peg>, int>{pegSets[0], 999999};
+    auto minH = pair <Node, int>{nodeSet.nodes[0], 999999};
 
-    for (int i = 0; i < pegSets.size(); ++i) {
-        int h = H(pegSets[i]); //distance to goal node if this node is expanded
-        if (h < minH.second)
-            minH = {pegSets[i], h};
+    for (int i = 0; i < nodeSet.nodes.size(); ++i) {
+        int h = H(nodeSet.nodes[i]); //distance to goal node if this node is expanded
+        if (h < minH.second) {
+            Debug::Log("Print H = " + to_string(h) + " for peg set: " + to_string(i));
+            minH = {nodeSet.nodes[i], h};
+        }
     }
 
     return minH.first;

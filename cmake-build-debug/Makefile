@@ -286,6 +286,60 @@ Main.cpp.s:
 	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Main.cpp.s
 .PHONY : Main.cpp.s
 
+Node.obj: Node.cpp.obj
+
+.PHONY : Node.obj
+
+# target to build an object file
+Node.cpp.obj:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Node.cpp.obj
+.PHONY : Node.cpp.obj
+
+Node.i: Node.cpp.i
+
+.PHONY : Node.i
+
+# target to preprocess a source file
+Node.cpp.i:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Node.cpp.i
+.PHONY : Node.cpp.i
+
+Node.s: Node.cpp.s
+
+.PHONY : Node.s
+
+# target to generate assembly for a file
+Node.cpp.s:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\Node.cpp.s
+.PHONY : Node.cpp.s
+
+NodeSet.obj: NodeSet.cpp.obj
+
+.PHONY : NodeSet.obj
+
+# target to build an object file
+NodeSet.cpp.obj:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\NodeSet.cpp.obj
+.PHONY : NodeSet.cpp.obj
+
+NodeSet.i: NodeSet.cpp.i
+
+.PHONY : NodeSet.i
+
+# target to preprocess a source file
+NodeSet.cpp.i:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\NodeSet.cpp.i
+.PHONY : NodeSet.cpp.i
+
+NodeSet.s: NodeSet.cpp.s
+
+.PHONY : NodeSet.s
+
+# target to generate assembly for a file
+NodeSet.cpp.s:
+	$(MAKE) -f CMakeFiles\AI_Proj2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AI_Proj2.dir\NodeSet.cpp.s
+.PHONY : NodeSet.cpp.s
+
 Peg.obj: Peg.cpp.obj
 
 .PHONY : Peg.obj
@@ -367,6 +421,12 @@ help:
 	@echo ... Main.obj
 	@echo ... Main.i
 	@echo ... Main.s
+	@echo ... Node.obj
+	@echo ... Node.i
+	@echo ... Node.s
+	@echo ... NodeSet.obj
+	@echo ... NodeSet.i
+	@echo ... NodeSet.s
 	@echo ... Peg.obj
 	@echo ... Peg.i
 	@echo ... Peg.s

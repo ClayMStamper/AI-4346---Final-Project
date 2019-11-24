@@ -6,37 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.cpp
-AStar.h
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
-Ai.h
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.cpp
-Ai.h
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
-
 C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
 Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 map
 C:/Users/clays/CLionProjects/AI_Proj2/map
-
-C:/Users/clays/CLionProjects/AI_Proj2/Debug.cpp
-Debug.h
-C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
+NodeSet.h
+C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 string
 -
 iostream
 C:/Users/clays/CLionProjects/AI_Proj2/iostream
-
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.cpp
-Disk.h
-C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 string
@@ -49,6 +31,8 @@ Hanoi.h
 C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
+utility
+-
 vector
 -
 Debug.h
@@ -57,16 +41,22 @@ Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 RBFS.h
 C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
+NodeSet.h
+C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
 
-C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp
-iostream
-C:/Users/clays/CLionProjects/AI_Proj2/iostream
-Hanoi.h
-C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Peg.cpp
+C:/Users/clays/CLionProjects/AI_Proj2/Node.h
+vector
+-
+Debug.h
+C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
+
+C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
+utility
+-
+Node.h
+C:/Users/clays/CLionProjects/AI_Proj2/Node.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 vector
@@ -75,10 +65,6 @@ Disk.h
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.cpp
-RBFS.h
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
 
 C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
 Ai.h

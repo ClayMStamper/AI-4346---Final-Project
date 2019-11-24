@@ -6,13 +6,14 @@
 #define AI_PROJ2_ASTAR_H
 
 #include "Ai.h"
+#include "NodeSet.h"
 
 class AStar : public Ai {
 
 private:
 
 public:
-    vector <Peg> ExpandNode (vector<vector<Peg>> pegsSets) override;
+    Node ExpandNode (NodeSet pegsSets) override;
 
 private:
 

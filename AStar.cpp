@@ -3,7 +3,8 @@
 //
 
 #include "AStar.h"
+#include "NodeSet.h"
 
-vector<Peg> AStar::ExpandNode(vector<vector<Peg>> pegsSets) {
+Node AStar::ExpandNode(NodeSet pegsSets) {
     return Ai::ExpandNode(pegsSets);
 }

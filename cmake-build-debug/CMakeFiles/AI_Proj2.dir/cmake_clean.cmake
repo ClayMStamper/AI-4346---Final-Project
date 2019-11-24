@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AI_Proj2.dir/Disk.cpp.obj"
   "CMakeFiles/AI_Proj2.dir/Hanoi.cpp.obj"
   "CMakeFiles/AI_Proj2.dir/Main.cpp.obj"
+  "CMakeFiles/AI_Proj2.dir/Node.cpp.obj"
+  "CMakeFiles/AI_Proj2.dir/NodeSet.cpp.obj"
   "CMakeFiles/AI_Proj2.dir/Peg.cpp.obj"
   "CMakeFiles/AI_Proj2.dir/RBFS.cpp.obj"
 )

@@ -7,6 +7,7 @@
 
 #include "Peg.h"
 #include "map"
+#include "NodeSet.h"
 
 class Ai {
 
@@ -15,8 +16,8 @@ protected:
 
 public:
     int G();
-    int H(vector<Peg> pegs);
-    virtual vector <Peg> ExpandNode (vector<vector<Peg>> pegsSets);
+    int H(Node pegs);
+    virtual Node ExpandNode (NodeSet pegsSets);
 
 private:
 
