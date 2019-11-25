@@ -1,1 +1,2 @@
-Algorithm,n,Heuristic,#Nodes Generated,#Nodes Expanded,Execution
+Algorithm,n,Heuristic,#Nodes Generated,#Nodes Expanded,Execution Time
+RBFS,4,h1,70,58,0.163516
