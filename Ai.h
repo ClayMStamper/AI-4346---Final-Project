@@ -19,7 +19,7 @@ class Ai : public IConvertToString {
 protected:
     string delim = ",";
     int diskCount = 3;
-    Node startNode;
+    Node currentNode;
     int expanded = 0, generated = 0;
     high_resolution_clock::time_point start, stop;
     double timeDuration;
@@ -31,15 +31,14 @@ public:
 
 public:
     Ai() = default;
-    Ai(int diskCount, Node currentNode, Node goalNode);
+    Ai(int diskCount, Node startNode, Node goalNode);
     ~Ai() = default;
-    int G();
     int H(Node actual);
     virtual Node ExpandNode(Node n);
     string ToString() override;
     void GenerateNodes(Node n);
     bool CanMove(Peg a, Peg b);
-    void PrintConclusion();
+    virtual void PrintConclusion();
 
 private:
 

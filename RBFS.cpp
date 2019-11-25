@@ -4,6 +4,32 @@
 
 #include "RBFS.h"
 
+RBFS::RBFS(int diskCount, Node currentNode, Node goalNode)  {
+
+    this->diskCount = diskCount;
+    this->currentNode = currentNode;
+
+    start = high_resolution_clock::now();
+
+    int i = 0;
+    for (; !(currentNode == goalNode); ++i) {
+        print("Itr: " + to_string(i));
+        currentNode.print();
+        currentNode = ExpandNode(currentNode);
+    }
+
+    stop = high_resolution_clock::now();
+    auto durationRaw = duration_cast<microseconds>(stop - start);
+    timeDuration = durationRaw.count() / pow(10, 6);
+
+    print("Itr: " + to_string(i));
+    currentNode.print();
+
+    PrintConclusion();
+
+}
+
+
 Node RBFS::ExpandNode(Node n) {
 
     if (openStack.Contains(n))
@@ -27,8 +53,14 @@ Node RBFS::ExpandNode(Node n) {
 
 }
 
-RBFS::RBFS(int diskCount, Node startNode) {
-    this->diskCount = diskCount;
-    this->startNode = startNode;
+void RBFS::PrintConclusion() {
+    string name = "RBFS";
+    resultString = name + delim + to_string(diskCount) + delim + "h1" + delim + to_string(generated)
+                   + delim + to_string(expanded) + delim + to_string(timeDuration);
+
+    print("Nodes generated: " + to_string(generated) +
+          "\nNodes expanded: " + to_string(expanded) + "\nTime duration: " + to_string(timeDuration));
 }
+
+
 

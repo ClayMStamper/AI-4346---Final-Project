@@ -10,7 +10,7 @@ using namespace std;
 
 int main (){
 
-    Hanoi towerOfHanoi = Hanoi(3, 4);
+    Hanoi towerOfHanoi = Hanoi(3);
 
     return 0;
 }

@@ -10,12 +10,15 @@
 class AStar : public Ai {
 
 private:
+    int G(Node actual);
+    string name = "A*";
 
 public:
     AStar() = default;
-    AStar(int diskCount, Node startNode);
+    AStar(int diskCount, Node startNode, Node goalNode);
     ~AStar() = default;
     Node ExpandNode(Node n) override;
+    void PrintConclusion() override;
 
 private:
 

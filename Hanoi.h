@@ -22,7 +22,7 @@ private: //private fields
 
 public: // public methods
     Hanoi() = default;
-    Hanoi(int pegCount, int diskCount);
+    Hanoi(int pegCount);
     ~Hanoi() = default;
     string ToString() override;
 

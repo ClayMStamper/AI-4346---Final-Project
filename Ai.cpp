@@ -4,10 +4,10 @@
 
 #include "Ai.h"
 
-Ai::Ai(int diskCount, Node currentNode, Node goalNode) {
+Ai::Ai(int diskCount, Node startNode, Node goalNode) {
 
     this->diskCount = diskCount;
-    this->startNode = currentNode;
+    this->currentNode = startNode;
 
     start = high_resolution_clock::now();
 
@@ -61,10 +61,6 @@ int Ai::H(Node actual) {
             dist += pow(2, i) - 1;
     }
     return dist;
-}
-
-int Ai::G() {
-    return 0;
 }
 
 //generate all new nodes from the current node
