@@ -6,23 +6,31 @@
 
 Hanoi::Hanoi(int pegCount, int diskCount) {
 
-    startNode = Node();
+    currentNode = Node();
     goalNode = Node();
 
     InitializeStart(pegCount, diskCount);
     InitializeGoal(pegCount, diskCount);
 
-    brain = Ai(diskCount, startNode);
-    //brain.ExpandNode(Node());
-    //brain.openStack.print();
+    brain = Ai(diskCount, currentNode);
+
+    int i = 0;
+    for (; !(currentNode == goalNode); ++i) {
+        print("Itr: " + to_string(i));
+        currentNode.print();
+        currentNode = brain.ExpandNode(currentNode);
+    }
+
+    print("Itr: " + to_string(i));
+    currentNode.print();
 
 }
 
 void Hanoi::InitializeStart(int pegCount, int diskCount) {
-    startNode.pegs.emplace_back(diskCount, diskCount); //first peg with disks
+    currentNode.pegs.emplace_back(diskCount, diskCount); //first peg with disks
     for (int i = 1; i < pegCount; ++i) {
 
-        startNode.pegs.emplace_back(0, pegCount); // all other empty startNode->pegs
+        currentNode.pegs.emplace_back(0, pegCount); // all other empty startNode->pegs
     }
 }
 
@@ -35,9 +43,9 @@ void Hanoi::InitializeGoal(int pegCount, int diskCount) {
 
 string Hanoi::ToString() {
     string msg;
-    for (int i = 0; i < startNode.pegs.size() ; ++i) {
+    for (int i = 0; i < currentNode.pegs.size() ; ++i) {
         msg += "\n--------------\nPeg: " + to_string(i) + "\n";
-        msg += "\n" + startNode.pegs[i].ToString() + "\n";
+        msg += "\n" + currentNode.pegs[i].ToString() + "\n";
     }
     return msg;
 }

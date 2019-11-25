@@ -7,16 +7,18 @@
 Ai::Ai(int diskCount, Node startNode) {
     this->diskCount = diskCount;
     this->startNode = startNode;
-    ExpandNode(ExpandNode(startNode));
-    openStack.print();
 }
 
 
 Node Ai::ExpandNode(Node n) {
 
+    if (openStack.Contains(n))
+        openStack -= n;
+
+    closedStack += n;
+
     GenerateNodes(n);
     auto minH = pair <Node, int>{Node(), 999999};
-
 
     for (auto & node : openStack.nodes) {
         int h = H(node); //distance to goal node if this node is expanded
@@ -57,7 +59,8 @@ void Ai::GenerateNodes(Node n) {
                 Disk moveDisk = n.pegs[from].disks.back();
                 newNode.pegs[from].disks.pop_back();
                 newNode.pegs[to].disks.push_back(moveDisk);
-                openStack += newNode;
+                if (!openStack.Contains(newNode) && !closedStack.Contains(newNode))
+                    openStack += newNode;
             }
         }
     }
