@@ -16,6 +16,7 @@ class Ai : public IConvertToString {
 protected:
     int diskCount = 3;
     Node startNode;
+    int expanded = 0, generated = 0;
 
 public:
     NodeSet openStack = NodeSet({});
@@ -31,6 +32,7 @@ public:
     string ToString() override;
     void GenerateNodes(Node n);
     bool CanMove(Peg a, Peg b);
+    void PrintConclusion();
 
 private:
 

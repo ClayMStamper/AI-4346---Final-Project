@@ -12,6 +12,7 @@ Ai::Ai(int diskCount, Node startNode) {
 
 Node Ai::ExpandNode(Node n) {
 
+
     if (openStack.Contains(n))
         openStack -= n;
 
@@ -28,6 +29,7 @@ Node Ai::ExpandNode(Node n) {
         }
     }
 
+    ++expanded;
     return minH.first;
 }
 
@@ -59,8 +61,10 @@ void Ai::GenerateNodes(Node n) {
                 Disk moveDisk = n.pegs[from].disks.back();
                 newNode.pegs[from].disks.pop_back();
                 newNode.pegs[to].disks.push_back(moveDisk);
-                if (!openStack.Contains(newNode) && !closedStack.Contains(newNode))
+                if (!openStack.Contains(newNode) && !closedStack.Contains(newNode)) {
+                    ++generated;
                     openStack += newNode;
+                }
             }
         }
     }
@@ -77,6 +81,12 @@ bool Ai::CanMove(Peg a, Peg b) {
 
 string Ai::ToString() {
     return "";
+}
+
+void Ai::PrintConclusion() {
+
+   // print()
+
 }
 
 

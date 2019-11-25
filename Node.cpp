@@ -20,3 +20,20 @@ bool Node::operator==(Node other) {
     }
     return true;
 }
+
+Node::Node() {
+
+    for (int i = 1; i < pegs.size(); ++i) {
+        pegs[i].height = pegs[0].height;
+        pegs[i].offset = pegs[0].offset;
+    }
+
+}
+
+Node::Node(vector<Peg> pegs) {
+    this->pegs = move(pegs);
+    for (int i = 1; i < pegs.size(); ++i) {
+        pegs[i].height = pegs[0].height;
+        pegs[i].offset = pegs[0].offset;
+    }
+}

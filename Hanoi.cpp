@@ -24,6 +24,8 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
     print("Itr: " + to_string(i));
     currentNode.print();
 
+    brain.PrintConclusion();
+
 }
 
 void Hanoi::InitializeStart(int pegCount, int diskCount) {

@@ -19,8 +19,8 @@ public:
 private:
 
 public:
-    Node() = default;
-    explicit Node(vector<Peg> pegs) {this->pegs = move(pegs);}
+    Node();
+    explicit Node(vector<Peg> pegs);
     ~Node() = default;
     string ToString() override;
     int Size() { return  pegs.size();} //should always be 3

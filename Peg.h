@@ -13,6 +13,7 @@ class Peg : public IConvertToString {
 
 public:
     std::vector<Disk> disks;
+    int offset, height;
 
 public:
     Peg(int ringCount, int height);
@@ -24,7 +25,6 @@ public:
 
 private:
     string pegChar = "||";
-    int offset, height;
 
 };
 
