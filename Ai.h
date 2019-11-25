@@ -10,21 +10,28 @@
 #include "Debug.h"
 #include "Peg.h"
 #include "NodeSet.h"
+#include "chrono"
+
+using namespace std::chrono;
 
 class Ai : public IConvertToString {
 
 protected:
+    string delim = ",";
     int diskCount = 3;
     Node startNode;
     int expanded = 0, generated = 0;
+    high_resolution_clock::time_point start, stop;
+    double timeDuration;
 
 public:
     NodeSet openStack = NodeSet({});
     NodeSet closedStack = NodeSet({});
+    string resultString;
 
 public:
     Ai() = default;
-    Ai(int diskCount, Node startNode);
+    Ai(int diskCount, Node currentNode, Node goalNode);
     ~Ai() = default;
     int G();
     int H(Node actual);

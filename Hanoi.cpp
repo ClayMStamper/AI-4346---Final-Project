@@ -13,21 +13,9 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
     InitializeStart(pegCount, diskCount);
     InitializeGoal(pegCount, diskCount);
 
-    Ai brain = Ai(diskCount, currentNode);
-    RBFS brain1 = RBFS(diskCount, currentNode);
-    AStar brain2 = AStar(diskCount, currentNode);
-
-    int i = 0;
-    for (; !(currentNode == goalNode); ++i) {
-        print("Itr: " + to_string(i));
-        currentNode.print();
-        currentNode = brain.ExpandNode(currentNode);
-    }
-
-    print("Itr: " + to_string(i));
-    currentNode.print();
-
-    brain.PrintConclusion();
+    Ai brain = Ai(diskCount, currentNode, goalNode);
+   // RBFS brain1 = RBFS(diskCount, currentNode);
+   // AStar brain2 = AStar(diskCount, currentNode);
 
 }
 

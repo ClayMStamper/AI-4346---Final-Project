@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
+C:/Users/clays/CLionProjects/AI_Proj2/Ai.cpp
 Ai.h
 C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
 
@@ -21,6 +21,8 @@ Peg.h
 C:/Users/clays/CLionProjects/AI_Proj2/Peg.h
 NodeSet.h
 C:/Users/clays/CLionProjects/AI_Proj2/NodeSet.h
+chrono
+C:/Users/clays/CLionProjects/AI_Proj2/chrono
 
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
 string
@@ -33,30 +35,6 @@ string
 -
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.cpp
-Hanoi.h
-C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
-AStar.h
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
-utility
--
-vector
--
-AStar.h
-C:/Users/clays/CLionProjects/AI_Proj2/AStar.h
-RBFS.h
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/Main.cpp
-iostream
-C:/Users/clays/CLionProjects/AI_Proj2/iostream
-Hanoi.h
-C:/Users/clays/CLionProjects/AI_Proj2/Hanoi.h
-chrono
-C:/Users/clays/CLionProjects/AI_Proj2/chrono
 
 C:/Users/clays/CLionProjects/AI_Proj2/Node.h
 utility
@@ -81,12 +59,4 @@ Disk.h
 C:/Users/clays/CLionProjects/AI_Proj2/Disk.h
 Debug.h
 C:/Users/clays/CLionProjects/AI_Proj2/Debug.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.cpp
-RBFS.h
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
-
-C:/Users/clays/CLionProjects/AI_Proj2/RBFS.h
-Ai.h
-C:/Users/clays/CLionProjects/AI_Proj2/Ai.h
 
