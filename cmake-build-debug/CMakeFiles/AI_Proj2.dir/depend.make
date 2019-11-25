@@ -25,6 +25,7 @@ CMakeFiles\AI_Proj2.dir\Disk.cpp.obj: ..\Debug.h
 CMakeFiles\AI_Proj2.dir\Disk.cpp.obj: ..\Disk.cpp
 CMakeFiles\AI_Proj2.dir\Disk.cpp.obj: ..\Disk.h
 
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\AStar.h
 CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Ai.h
 CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Debug.h
 CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Disk.h
@@ -33,7 +34,9 @@ CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Hanoi.h
 CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Node.h
 CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\NodeSet.h
 CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\Peg.h
+CMakeFiles\AI_Proj2.dir\Hanoi.cpp.obj: ..\RBFS.h
 
+CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\AStar.h
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Ai.h
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Debug.h
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Disk.h
@@ -42,6 +45,7 @@ CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Main.cpp
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Node.h
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\NodeSet.h
 CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\Peg.h
+CMakeFiles\AI_Proj2.dir\Main.cpp.obj: ..\RBFS.h
 
 CMakeFiles\AI_Proj2.dir\Node.cpp.obj: ..\Debug.h
 CMakeFiles\AI_Proj2.dir\Node.cpp.obj: ..\Disk.h

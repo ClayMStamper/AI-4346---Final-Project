@@ -12,7 +12,7 @@ class RBFS : public Ai {
 private: // private fields
 
 public: //public methods
-    explicit RBFS(int diskCount);
+    RBFS(int diskCount, Node startNode);
     RBFS () = default;
     ~RBFS() = default;
     Node ExpandNode(Node n) override;

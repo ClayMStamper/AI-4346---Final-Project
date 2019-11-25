@@ -12,7 +12,6 @@ Ai::Ai(int diskCount, Node startNode) {
 
 Node Ai::ExpandNode(Node n) {
 
-
     if (openStack.Contains(n))
         openStack -= n;
 
@@ -85,7 +84,8 @@ string Ai::ToString() {
 
 void Ai::PrintConclusion() {
 
-   // print()
+   print("Nodes generated: " + to_string(generated) +
+   "\nNodes expanded: " + to_string(expanded));
 
 }
 

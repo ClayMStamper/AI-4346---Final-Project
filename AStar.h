@@ -6,15 +6,15 @@
 #define AI_PROJ2_ASTAR_H
 
 #include "Ai.h"
-#include "NodeSet.h"
 
 class AStar : public Ai {
 
 private:
 
 public:
-    AStar() {}
-
+    AStar() = default;
+    AStar(int diskCount, Node startNode);
+    ~AStar() = default;
     Node ExpandNode(Node n) override;
 
 private:

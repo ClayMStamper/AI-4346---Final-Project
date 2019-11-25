@@ -8,7 +8,8 @@
 
 #include <utility>
 #include <vector>
-#include "Ai.h"
+#include "AStar.h"
+#include "RBFS.h"
 
 using namespace std;
 
@@ -17,7 +18,7 @@ class Hanoi : public IConvertToString {
 private: //private fields
     Node currentNode;
     Node goalNode;
-    Ai brain = Ai(3, Node());
+   // Ai brain = Ai(3, Node());
 
 public: // public methods
     Hanoi() = default;

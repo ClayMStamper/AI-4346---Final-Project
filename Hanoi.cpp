@@ -3,6 +3,7 @@
 //
 
 #include "Hanoi.h"
+#include "AStar.h"
 
 Hanoi::Hanoi(int pegCount, int diskCount) {
 
@@ -12,7 +13,9 @@ Hanoi::Hanoi(int pegCount, int diskCount) {
     InitializeStart(pegCount, diskCount);
     InitializeGoal(pegCount, diskCount);
 
-    brain = Ai(diskCount, currentNode);
+    Ai brain = Ai(diskCount, currentNode);
+    RBFS brain1 = RBFS(diskCount, currentNode);
+    AStar brain2 = AStar(diskCount, currentNode);
 
     int i = 0;
     for (; !(currentNode == goalNode); ++i) {
